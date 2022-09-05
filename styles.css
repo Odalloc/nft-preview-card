@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --white: hsl(0, 0%, 100%);
+  --cyan: hsl(178, 100%, 50%);
+  --soft-blue: hsl(215, 51%, 70%);
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  max-width: 350px;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.card h2 {
+  margin-block: 15px;
+  color: var(--white);
+}
+
+.card p {
+  color: var(--soft-blue);
+  line-height: 26px;
+}
+
+.bg-img {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bg-img-layer {
+  background-color: rgba(0, 255, 247, 0.6);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+#img-equilibrium {
+  width: 100%;
+  height: auto;
+}
+
+.bg-img:hover .bg-img-layer {
+  visibility: visible;
+}
+
+.card-info,
+.card-info div,
+.creation {
+  display: flex;
+}
+
+.card-info {
+  justify-content: space-between;
+  margin-block: 15px;
+}
+
+.creation,
+.card-info div {
+  gap: 10px;
+  align-items: center;
+}
+
+.card-info img {
+  width: 18px;
+  height: 20px;
+}
+
+.card-num {
+  color: var(--cyan) !important;
+}
+
+.card-line {
+  width: 100%;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.creation {
+  margin-top: 15px;
+}
+
+.creation img {
+  width: 40px;
+  height: auto;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.creation-name {
+  color: var(--white);
+}
+
+.card h2:hover,
+.creation-name:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
