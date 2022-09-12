@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/Odalloc/preview-card
-- Live Site URL: https://odalloc.github.io/preview-card/
+- Solution URL: https://github.com/Odalloc/nft-preview-card
+- Live Site URL: https://odalloc.github.io/nft-preview-card/
 
 ### Built with
 
